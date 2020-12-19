@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+}
+
+stages {
+    stage('checkout') {
+
+    }
+
+    stage('do something') {
+        echo 'this is from the main jenkinsfile'
+    }
+}
+
+post {
+    always {
+        echo 'this is the end, that is a shame....'
+    }
+}
