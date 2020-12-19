@@ -12,6 +12,6 @@ pipeline {
         }
 
         things.build()
-        this.result()
+        things.result()
     }
 }
