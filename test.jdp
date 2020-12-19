@@ -12,13 +12,6 @@ pipeline {
         }
 
         things.build()
-
-        stage('la de dah') {
-            steps {
-                echo 'bleugh'
-            }
-        }
-
         this.result()
     }
 }
