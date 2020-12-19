@@ -1,8 +1,9 @@
 def pipeline
-node( 'myAgentLabel' ) {
+node( '' ) {
     stage ( 'checkout SCM' ) {
         git branch: 'main', url: 'https://github.com/adamsjoe/jenkinsTest.git'
-        pipeline = load( "${env.WORKSPACE}/path/to/submodule/myGroovyFunctions.grooovy" )
+        pipeline =  load( "${env.WORKSPACE}/otherStuff.groovy" )
     }
     pipeline.build()
+    pipeline.results()
 }
