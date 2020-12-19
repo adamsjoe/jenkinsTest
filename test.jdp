@@ -7,11 +7,10 @@ pipeline {
                 git branch: 'main',
                 url: 'https://github.com/adamsjoe/jenkinsTest.git'
             }
-
-            things = load( "${env.WORKSPACE}/otherStuff.groovy" )            
+            
         }
+        things = load( "${env.WORKSPACE}/otherStuff.groovy" )            
 
         things.build()
-        things.result()
     }
 }
