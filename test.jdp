@@ -9,7 +9,9 @@ pipeline {
             }
         }
         stage('la de dah') {
-            echo 'bleugh'
+            steps {
+                echo 'bleugh'
+            }
         }
     }
 }
