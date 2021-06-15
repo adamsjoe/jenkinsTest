@@ -1,14 +1,14 @@
 def build() {
 
     stage('Build') {
-        echo 'in the build shit'
+        echo 'in the build stuff'
     }
 }
 
 def results() {
 
     stage('Results') {
-        echo 'in the results shit'
+        echo 'in the results stuff'
     }
 }
 
